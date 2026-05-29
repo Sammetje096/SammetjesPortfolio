@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SammetjeStudios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+
+    <img src="img/LOGO.png" alt="Mijn logo" onclick="scrollToTop()" />
+
+    <div class="topbar-links">
+      <span onclick="zoomToElement(document.querySelector('.notebook'), 'projects', 2.0)">
+        Projecten
+      </span>
+
+      <span onclick="scrollToContact()">
+        Contact
+      </span>
+    </div>
+
+  </div>
+
+  <div class="scene" id="scene">
+
+    <div class="hotspot laptop" onclick="zoomToElement(this, 'about', 2.1)"></div>
+    <div class="hotspot cup" onclick="scrollToContact()"></div>
+    <div class="hotspot notebook" onclick="zoomToElement(this, 'projects', 2.0)"></div>
+
+    <img src="img/SCHERM LAPTOP IMAGE POPOUT.png" class="hover-item laptop-hover">
+    <img src="img/Koffie kopje popout.png" class="hover-item cup-hover">
+    <img src="img/NOTIETIEBOEKJE POPOUT.png" class="hover-item notebook-hover">
+
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" class="popup">
+    <div class="popup-content about-popup">
+
+      <div class="about-layout">
+
+        <div class="about-text">
+
+          <h1>Sam Versprille</h1>
+
+          <h3>
+            Student Communicatie & Multimedia Design<br>
+            aan Avans Hogeschool in Breda.
+          </h3>
+
+          <div class="about-line"></div>
+
+          <p>
+            Sinds jongs af aan ben ik altijd al geïnteresseerd geweest in verhalen en in verhalen bedenken. Zo is dat ook gegroeid in interesse voor kunst, en in ontwerpen van andere makers. Wat is het verhaal achter het werk, en wat vertelt het werk? Dat is iets wat mij fascineert, en ik graag meeneem in mijn werk.
+          </p>
+
+          <p>
+            Ik vertel dus graag verhalen in mijn werk, en zo probeer ik vaak mijn eigen interesses en  interpretatie te stoppen in een opdracht, waar ik mij natuurlijk ook hou aan de verwachting van de opdrachtgever. 
+          </p>
+
+          <p>
+            Voor mijn werken gebruik ik zowel digitale programma’s als fysieke materialen, zoals potlood en papier. Ik lever graag kwaliteit, en ben ambitieus als het gaat om wat ik maak. 
+          </p>
+
+          <div class="about-line"></div>
+
+          <h4>Software:</h4>
+          <p class="software-text">
+            Photoshop, Illustrator, InDesign, Premiere Pro, Bandlab
+          </p>
+
+        </div>
+
+        <div class="about-image-container">
+          <img src="img/Over mij.png" class="about-image">
+        </div>
+
+      </div>
+
+      <button class="close-btn" onclick="closePopup('about')">Sluiten</button>
+
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div id="projects" class="popup">
+    <div class="popup-content notebook-popup">
+
+      <h2>Projecten</h2>
+
+      <div class="work-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="work-item"
+          onclick="openWorkDetail(
+            'LUPS!',
+            'img/Blikje/blik groot.png',
+            'Schetsen, Photoshop, Illustrator, Moodboards, Mockups ',
+            'Ontwerp een merk-identiteit voor een drankje gekoppeld aan een thema.',
+            'Lups! Is ontstaan vanuit een onderzoek naar nostalgie, en wat nostalgie in houd voor mij, en voor anderen van mijn leeftijd. Van Uit dit onderzoek heb ik besloten om speelse vormen en kleuren toe te passen, kijkend vanuit videogames van toen ik jong was. Zo komen er ook herkenbare elementen terug vanuit de game wereld, waar dat herkenbare weer juist de aandacht en herinneringen oproept bij de doelgroep. ',
+            [
+              'img/Blikje/instastory mockup.png',
+              'img/Blikje/Flyer mockup.png'
+            ]
+          )">
+
+          <img src="img/Lups!.png" class="project-img project1">
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="work-item"
+          onclick="openWorkDetail(
+            'De Stille Wrapped',
+            'img/Quiet/WRAPPED POSTER NIEUW.png',
+            'Photoshop, Schetsen',
+
+            '<p>Bedenk een manier om “Lawaai” te maken voor stille armoede, om meer naamsbekendheid te creëren voor Quiet.</p> <p> <h4> De opdrachtgever:</h4> <p> WARS, in samenwerking met QUIET </p>',
+            '<p>Om te zorgen dat ik een goed beeld had van de opdracht, ben ik begonnen naar research te doen naar wat Quiet is, en ook naar wat stille armoede is. Hieruit kwam ik op de inzichten dat mensen in stille armoede niet graag praten over bepaalde onderwerpen, omdat daar soms schaamte aan hangt. Quiet staat voor het helpen van deze mensen, en het geven van vertrouwen, openheid en het gevoel dat je welkom bent.</p> <br> <p> Na een conversatie te horen over het fenomeen “wrapped” begon ik na te denken over het gebruiken van dat format voor een poster, gericht op jongeren en ouderen die bekend zijn met sociale media. Wrapped is iets wat de laatste jaren enorm is toegenomen, en zo snel herkenbaar is aan de vorm die deze aan neemt. Ik ben gaan experimenteren met verschillende formats, om te kijken wat het meeste werkt, en wat herkenbaar is voor mijn doelgroep. Zo ben ik uiteindelijk aan 1 eindwerk gekomen, waar nog verder op uitgebreid kan worden. Deze zou te vinden zijn op sociale media, bushokjes en andere plekken in steden.</p>',
+            [
+              'img/Quiet/bushokje add.png',
+              'img/Quiet/telefoon post.png',
+              'img/Quiet/Bankrekenig wrapped v2.png',
+            ]
+          )">
+
+          <img src="img/Wrapped.png" class="project-img project2">
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="work-item"
+          onclick="openWorkDetail(
+            'Posters BOLD',
+            'img/Posters_Bold.png',
+            'Photoshop',
+            'In elke poster voor deze studievereniging wordt ik vrijgelaten om mijn eigen creativiteit en ideeën te visualiseren. Zo oefen ik met verschillende stijlen, en probeer ik bij elke poster de lat hoger te leggen. Ik probeer altijd een speelse stijl aan te houden, waardoor de posters opvallen, en duidelijk de nodige informatie uitbrengen die de doelgroep nodig heeft. Van elke poster is er ook een kleinere versie, die op de sociale media kanalen van deze studievereniging gedeeld worden. ',
+            'Ik heb geëxperimenteerd met typografie en compositie voor sterke visuals.',
+            [
+              'img/Bold/Poster kroegentocht november zeven2A1 poster.png',
+              'img/Bold/Poster Pubquiz 26 feb 2026 A1.png',
+              'img/Bold/Poster Kroegentocht XXL 2026.png',
+              'img/Bold/Poster kroegentocht Maart 2026.png'
+            ]
+          )">
+
+          <img src="img/Posters_Bold.png" class="project-img project3">
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="work-item"
+          onclick="openWorkDetail(
+            'EXPERIMENTEN',
+            'img/Experiment/SIDEQUEST DUMP.png',
+            'Photoshop, conceptontwikkeling',
+            'Campagneconcept voor Quiet rondom stille armoede.',
+            '<p>In eigen experimenten probeer ik altijd mijn creatieve brein, humor en gekste ideetjes te verwerken. Vaak gebruik ik het resultaat van deze werken voor eigen doeleinden, zoals een post op Instagram, of muziek voor mijzelf of omgeving.</p> <br> <p>Deze eigen werken vertellen mijn verhalen, tonen mijn interesses, en zorgen ervoor dat ik mijn passie kan uiten. </p>',
+            
+            [
+              'img/Experiment/STILSTAANDE GROEI.png',
+              'img/Experiment/mrkrabs.png',
+              'img/Experiment/Kevinos Cubos edit-Recovered.png',
+              'img/Experiment/Gescammed niffo.png'
+            ]
+          )">
+
+          <img src="img/Experimenten.png" class="project-img project4">
+        </div>
+
+      </div>
+
+      <button class="close-btn" onclick="closePopup('projects')">
+        Sluiten
+      </button>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contactSection">
+    <h2>Contact</h2>
+
+    <p>Wil je contact opnemen? Stuur gerust een berichtje! dan praten we verder.</p>
+
+    <p><strong>Email:</strong> samversprille84@gmail.com</p>
+
+    <p>
+      <strong>Instagram:</strong>
+      <a href="https://www.instagram.com/sammetje096/" target="_blank">
+        @Sammetje096
+      </a>
+    </p>
+
+    <p>
+      <strong>Linkedin:</strong>
+      <a href="https://www.linkedin.com/in/sam-versprille-a8882735b/" target="_blank">
+        Sam Versprille
+      </a>
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
