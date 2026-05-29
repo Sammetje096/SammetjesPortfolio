@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* ================================= */
 /* GLOBALE RESETS */
 /* ================================= */
@@ -460,8 +460,7 @@ body {
   border-radius: 12px;
 }
 
-=======
-/* Globale resets */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -667,4 +666,3 @@ body {
 .project2 { max-height: 400px; }
 .project3 { max-height: 450px; }
 .project4 { max-height: 450px; }
->>>>>>> f4489273afc9b68c90c5ef1f38a45cce0041e346
