@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -210,3 +211,88 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SammetjeStudios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Zwarte bovenbalk met logo -->
+  <div class="topbar">
+    <img src="img/LOGO.png" alt="Mijn logo" onclick="scrollToTop()" />
+  </div>
+
+  <!-- Achtergrond met klikbare hotspots -->
+  <div class="scene" id="scene">
+
+    <!-- Hotspots -->
+    <div class="hotspot laptop" onclick="zoomToElement(this, 'about', 2.1)"></div>
+    <div class="hotspot cup" onclick="scrollToContact()"></div>
+    <div class="hotspot notebook" onclick="zoomToElement(this, 'projects', 2.0)"></div>
+
+    <!-- Hover items -->
+    <img src="img/SCHERM LAPTOP IMAGE POPOUT.png" class="hover-item laptop-hover">
+    <img src="img/Koffie kopje popout.png" class="hover-item cup-hover">
+    <img src="img/NOTIETIEBOEKJE POPOUT.png" class="hover-item notebook-hover">
+
+  </div>
+
+  <!-- Over mij popup -->
+  <div id="about" class="popup">
+    <div class="popup-content about-popup">
+      <img src="img/Over mij.png" alt="Over mij" />
+      <h3>Ik ben Sam, “Een grafische verteller tot de kern.”</h3>
+      <p>Of dat is in ieder geval hoe ik mezelf zou omschrijven. Maar, wat houd dat eigenlijk in?</p>
+      <p>Ik zie het een beetje zo: Mijn creatieve brein begint te werken, er vormt een idee, of er is een vonk. En vanuit dat idee beginnen we meteen met uitwerken, en dat uitwerkproces zie ik als een puzzel. Een puzzel waar elk stukje aan elkaar past. Zo kies ik mijn richting, en ben ik er niet tevreden mee? Dan proberen we gewoon een andere richting. Als alle stukjes in elkaar zitten vormen ze met elkaar een verhaal, die vanuit de kern is ontstaan.</p>
+      <p>Ik gebruik vooral Photoshop, maar ik ben ook geen vreemde met een aantal andere Adobe programma’s. Ook werk ik traditioneel, en vaak breng ik deze traditionele tekeningen naar de digitale wereld, waar ik ze combineer met foto’s.</p>
+      <p>Mijn werken bevatten een mix van humor, maar ook kaart ik serieuze onderwerpen aan, die vaak dichtbij mij staan. Door middel van humor probeer ik de luchtigheid erin te brengen. Ik vind het belangrijk dat we kunnen lachen om het leven, ook al was iets zwaars. Het positieve ergens uithalen, dat is wat ik wil.</p>
+      <button class="close-btn" onclick="closePopup('about')">Sluiten</button>
+    </div>
+  </div>
+
+  <!-- Projecten popup -->
+  <div id="projects" class="popup">
+    <div class="popup-content notebook-popup">
+      <h2>Mijn Werk</h2>
+
+      <div class="work-grid">
+        <div class="work-item" onclick="openWorkDetail('STILSTAANDE GROEI', 'img/Banner zelfreflectie.png', 'Als personen maken we allemaal veel groei mee, Hoewel we ooit stoppen met groeien in de lengte, stoppen we niet met groeien als persoon. Soms hebben we deze groei niet door, Lijkt het alsof we niet vooruit, of achteruit gaan, Als een soort standbeeld. Dit gevoel heb ik vaak genoeg, en van daaruit is dit beeld ontstaan, waar ik mezelf centraal heb gesteld, om te delen dat ik dit vaak genoeg heb, en anderen zich hier in kunnen vinden. Waarin de planten die uit mijn hoofd groeien als symbool staat voor die mentale groei die we allemaal onbewust meemaken. Het volledige werk is gemaakt in Photoshop, en is in een paar dagen tot stand gekomen.')">
+          <img src="img/Stilstaande groei POPOUT.png" alt="Project 1" class="project-img project1">
+        </div>
+        <div class="work-item" onclick="openWorkDetail('WAT ZOU JE ZEGGEN? ', 'img/Wzjz banner.png', 'Artiest Jasper Bok had voor mij een aanvraag voor zijn nieuwste, nog niet uitgebrachte single. Hij stuurde mij het nummer door, en zo begon ik met luisteren naar de tekst en welk gevoel het nummer mij gaf. Vanuit daar heb ik mijn Programma’s geopend, en ben ik aan de slag gegaan. Het nummer kreeg de titel “Wat zou je zeggen?”, en vanuit die titel ben ik meteen meerdere ideeën gaan uitwerken. De tekst gaat als het ware over het onzekere gevoel wat liefde soms met zich mee brengt, en de vele gedachtes die er ontstaan. Vanuit dat thema kwam het idee van de denkwolk, en zo is Jasper het personage. De cover weergeeft Jaspers verhaal, Met de speelsheid die het nummer zelf ook bevat.')">
+          <img src="img/WZJZ Pop out.png" alt="Project 2" class="project-img project2">
+        </div>
+        <div class="work-item" onclick="openWorkDetail('INSTA DUMP', 'img/Insta banner.png', 'Ik vind het altijd leuk om mijn eigen ervaringen en verhalen te delen met andere, en zo ook op een unieke wijze op sociale media. Zo kwam deze “Sidequest dump” tot stand. De term “Sidequest” staat voor extra gebeurtenissen in je leven, zoals bijvoorbeeld activiteiten. Zonder dat er een rode draad is over de hele post, zijn het allemaal kleine verhaaltjes, die samen een collectief van verhalen vormen. Mijn herkenbare stijl is terug te vinden, waar het er als een bende uitziet, maar zo toch een eigen structuur vind.')">
+          <img src="img/Insta dump pop out.png" alt="Project 3" class="project-img project3">
+        </div>
+        <div class="work-item" onclick="openWorkDetail('STILLE WRAPPED', 'img/Stille banner.png', 'De stille wrapped is gemaakt in opdracht van Wars, die naar ons toe kwamen met een opdracht van Quiet. Quiet is een organisatie die lawaai maakt voor stille armoede, of dat is iniedergeval hun missie. Wat we wilden bereiken met deze opdracht is het creëren van meer naamsbekendheid richting deze organisatie, door middel van een campagne, evenement, of iets anders. We hadden niet een specifieke doelgroep waar we ons perse op moesten richten, en daarom ben ik gegaan voor Jongeren en ouderen die bekend zijn met sociale media. Na een conversatie te horen over de Spotify wrapped (Een concept van spotify waar je een overzicht ziet van wat je geluisterd hebt in een jaar) kwam bij mij het idee naar boven om ook een wrapped te maken, maar dan net iets anders. Waar het juist de focus legt op wat mensen in stille armoede liever niet delen, of liever niet over praten. Zo ben ik onderzoek gaan doen naar de vormgeving van deze wrapped, heb ik meerdere versies gemaakt, en zo ben ik uiteindelijk op een mooi resultaat uitgekomen, waar in de poster ik gelet heb op de huisstijl van Quiet, en de boodschap zo goed mogelijk wilde overdragen. De poster is gemaakt in photoshop, op een A3 formaat.')">
+          <img src="img/Stille wrapped pop out.png" alt="Project 4" class="project-img project4">
+        </div>
+      </div>
+
+      <button class="close-btn" onclick="closePopup('projects')">Sluiten</button>
+    </div>
+  </div>
+
+  <!-- Contactsectie -->
+  <section id="contactSection">
+    <h2>Contact</h2>
+    <p>Wil je contact opnemen? Stuur gerust een bericht via e-mail of sociale media!</p>
+    <p><strong>Email:</strong> samversprille84@gmail.com</p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/sammetje096/" target="_blank">@Sammetje096</a></p>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+>>>>>>> f4489273afc9b68c90c5ef1f38a45cce0041e346
